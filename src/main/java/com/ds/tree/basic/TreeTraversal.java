@@ -1,4 +1,4 @@
-package com.ds.tree.traversal;
+package com.ds.tree.basic;
 
 import com.ds.structure.Node;
 
