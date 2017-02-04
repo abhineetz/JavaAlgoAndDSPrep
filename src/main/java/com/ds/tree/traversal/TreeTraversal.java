@@ -15,37 +15,34 @@ public class TreeTraversal {
 	
 	public String preOrder(Node root) {
 		
-	    if (root != null){
-	    	str.append(root.data+" ");
-	        //System.out.print(root.data+" ");
-	    }
+	    if (root != null) str.append(root.data+" ");
 	    
-	    if (root.left != null) {
-	        preOrder(root.left);
-	    }
+	    if (root.left != null) preOrder(root.left);
 	    
-	    if (root.right != null) {
-	        preOrder(root.right);
-	    }
+	    if (root.right != null) preOrder(root.right);
 	    
 	    return str.toString();
 	}
 	
 	public String postOrder(Node root) {
 	    
-	    if(root.left != null){
-	        postOrder(root.left);
-	    }
+	    if(root.left != null) postOrder(root.left);
 	     
-	    if(root.right != null){
-	        postOrder(root.right);
-	    }
+	    if(root.right != null) postOrder(root.right);
 	   
-	    if(root != null){
-	    	str.append(root.data+" ");
-	    	//System.out.print(root.data+" ");   
-	    }
+	    if(root != null) str.append(root.data+" ");
 	     
+	    return str.toString();
+	}
+	
+	public String inOrder(Node root) {
+	    
+	    if (root.left !=null) inOrder(root.left);
+	    
+	    if(root != null) str.append(root.data+" ");
+	    
+	    if (root.right !=null) inOrder(root.right);
+	    
 	    return str.toString();
 	}
 }

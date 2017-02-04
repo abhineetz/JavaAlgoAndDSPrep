@@ -35,6 +35,16 @@ public class TreeTraversalTest {
 		System.out.println("PostOrder : "+str);
 		Assert.assertEquals("1 4 5 6 2 3 ", str);
 	}
+	
+	@Test
+	public void inOrderTraversalTest(){
+		
+		Node root = buildTestData(); //	3 5 1 4 2 6
+		
+		String str = new TreeTraversal().inOrder(root);
+		System.out.println("InOrder : "+str);
+		Assert.assertEquals("1 5 4 3 6 2 ", str);
+	}
 
 	private Node buildTestData() {
 		Node root = new Node(3);
