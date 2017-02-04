@@ -1,9 +1,9 @@
-package com.ds.tree.traversal;
+package com.ds.tree.basic;
 import org.junit.Assert;
 import org.junit.Test;
 
 import com.ds.structure.Node;
-import com.ds.tree.traversal.TreeTraversal;
+import com.ds.tree.basic.TreeTraversal;
 
 /**
  * 
