@@ -1,5 +1,8 @@
 package com.ds.tree.basic;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 import com.ds.structure.Node;
 
 /**
@@ -27,6 +30,30 @@ public class BinaryTreeSearchElement {
 					if(root.right != null) searchElementRecursively(root.right, data);
 				}
 		}
+		
+		return isElementMatched;
+	}
+	
+	/*
+	 * Search element in a binary tree without recursion
+	 */
+	public boolean searchElementWoRecursion(Node root, int data){
+		
+		Queue<Node> queue = new LinkedList<>();
+		
+		queue.add(root);
+		
+		while(!queue.isEmpty()){
+			Node head = queue.remove();
+			
+			if(head.data == data){
+				return true;
+			}
+			
+			queue.add(head.left);
+			queue.add(head.right);
+		}
+		
 		
 		return isElementMatched;
 	}

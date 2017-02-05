@@ -35,7 +35,7 @@ public class TreeTestUtils {
 	 *	   | 		 |                 |		 |
 	 * 	   1		 4				___6___
 	 * 							   |	   |
-	 * 							   3
+	 * 							   12
 	 */
 	public static Node buildTestData_HeightEq3() {
 		Node root = new Node(3);
@@ -46,7 +46,7 @@ public class TreeTestUtils {
 		root.left.right = new Node(4);
 		
 		root.right.left = new Node(6);
-		root.right.left.left = new Node(3);
+		root.right.left.left = new Node(12);
 		
 		return root;
 	}

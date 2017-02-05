@@ -20,7 +20,7 @@ public class BinaryTreeMaxElementTest {
 		
 		int max = new BinaryTreeMaxElement().getMaxElement(root); 
 		
-		assertEquals(6, max);
+		assertEquals(12, max);
 	}
 	
 	@Test
@@ -40,11 +40,11 @@ public class BinaryTreeMaxElementTest {
 	@Test
 	public void getMaxElementWoRecursion_RootMax(){
 		
-		Node root = buildTestData_HeightEq3();
+		Node root = buildTestData_HeightEq3_MaxValEqRoot();
 		
 		int max = new BinaryTreeMaxElement().getMaxElementWoRecursion(root); 
 		
-		assertEquals(6, max);
+		assertEquals(9, max);
 	}
 	
 	@Test
