@@ -3,8 +3,6 @@
  */
 package com.ds.tree.basic;
 
-import static com.ds.tree.util.TreeTestUtils.buildTestData_HeightEq3_MaxValEqRoot;
-
 import java.util.LinkedList;
 import java.util.Queue;
 
