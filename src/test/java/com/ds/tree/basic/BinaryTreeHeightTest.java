@@ -7,7 +7,6 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import com.ds.structure.Node;
-import com.ds.tree.util.TreeTestUtils;
 
 public class BinaryTreeHeightTest {
 	

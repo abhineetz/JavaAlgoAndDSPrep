@@ -49,6 +49,14 @@ public class TreeTraversalTest {
 		Assert.assertEquals("1 5 4 3 6 2 ", str);
 	}
 
-	
+	@Test
+	public void levelOrderTraversalTest(){
+		
+		Node root = buildTestData_HeightEq2(); //	3 5 1 4 2 6
+		
+		String str = new TreeTraversal().levelOrderTraversal(root);
+		System.out.println("LevelOrder : "+str);
+		Assert.assertEquals("3 5 2 1 4 6 ", str);
+	}
     
 }

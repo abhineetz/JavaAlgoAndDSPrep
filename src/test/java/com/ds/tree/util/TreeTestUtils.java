@@ -6,9 +6,11 @@ public class TreeTestUtils {
 
 	/*
 	 * Tree structure
-	 * 					#3
-	 * 				#5		#2
-	 * 			  #1  #4   #6	
+	 * 			_____________3_____________
+	 * 	  	 	|						   |
+	 * 	   	____5____				   ____2____
+	 *	   | 		 |                |			|
+	 * 	   1		 4				  6
 	 * 
 	 */
 	public static Node buildTestData_HeightEq2() {
@@ -27,10 +29,13 @@ public class TreeTestUtils {
 	/*
 	 * Tree structure
 	 * 
-	 * 					#3
-	 * 				#5		#2
-	 * 			 #1   #4   #6	
-	 * 					  #3
+	 * 		     _____________3_____________
+	 * 	  	 	|						    |
+	 * 	   	____5____				    ____2____
+	 *	   | 		 |                 |		 |
+	 * 	   1		 4				___6___
+	 * 							   |	   |
+	 * 							   3
 	 */
 	public static Node buildTestData_HeightEq3() {
 		Node root = new Node(3);
