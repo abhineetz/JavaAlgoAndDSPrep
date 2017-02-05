@@ -2,14 +2,17 @@ package com.ds.tree.basic;
 
 import static com.ds.tree.util.TreeTestUtils.buildTestData_HeightEq3;
 import static com.ds.tree.util.TreeTestUtils.buildTestData_HeightEq3_MaxValEqRoot;
+import static org.junit.Assert.assertEquals;
 
-import org.junit.Assert;
 import org.junit.Test;
 
 import com.ds.structure.Node;
 
 public class BinaryTreeMaxElementTest {
 	
+	/*
+	 *  Test cases using recursion implementation
+	 */
 	@Test
 	public void getMaxElementTest(){
 		
@@ -17,7 +20,7 @@ public class BinaryTreeMaxElementTest {
 		
 		int max = new BinaryTreeMaxElement().getMaxElement(root); 
 		
-		Assert.assertEquals(6, max);
+		assertEquals(6, max);
 	}
 	
 	@Test
@@ -27,6 +30,31 @@ public class BinaryTreeMaxElementTest {
 		
 		int max = new BinaryTreeMaxElement().getMaxElement(root); 
 		
-		Assert.assertEquals(9, max);
+		assertEquals(9, max);
 	}
+	
+	
+	/*
+	 *  Test cases for Non-recursion implementation
+	 */
+	@Test
+	public void getMaxElementWoRecursion_RootMax(){
+		
+		Node root = buildTestData_HeightEq3();
+		
+		int max = new BinaryTreeMaxElement().getMaxElementWoRecursion(root); 
+		
+		assertEquals(6, max);
+	}
+	
+	@Test
+	public void getMaxElementWoRecursion(){
+		
+		Node root = buildTestData_HeightEq3_MaxValEqRoot();
+		
+		int max = new BinaryTreeMaxElement().getMaxElementWoRecursion(root); 
+		
+		assertEquals(9, max);
+	}
+	
 }
