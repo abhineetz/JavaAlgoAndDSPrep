@@ -8,5 +8,6 @@ Algorithms and datastructure preparation
 ## Tree Algorithms
 - Tree Traversal - Preorder, PostOrder, InOrder, LevelOrder.
 - BinaryTreeHeight
+- BinaryTreeMaxElement
 
 
