@@ -1,5 +1,12 @@
 # JavaAlgoAndDSPrep
 Algorithms and datastructure preparation
 
-##Examples
--Tree Traversal - Preorder, PostOrder and InOrder.
+# Each class has a corresponding Test class eg. 
+	Class -> BinaryTreeHeight 
+	Test class -> BinaryTreeHeightTest
+
+## Tree Algorithms
+- Tree Traversal - Preorder, PostOrder, InOrder, LevelOrder.
+- BinaryTreeHeight
+
+
