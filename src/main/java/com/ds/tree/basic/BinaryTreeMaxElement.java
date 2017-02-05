@@ -7,6 +7,12 @@ import java.util.Queue;
 
 import com.ds.structure.Node;
 
+/**
+ * 
+ * @author Abhineet
+ *
+ *	Find the max element in binary tree
+ */
 public class BinaryTreeMaxElement {
 
 	int maxElement = MIN_VALUE;

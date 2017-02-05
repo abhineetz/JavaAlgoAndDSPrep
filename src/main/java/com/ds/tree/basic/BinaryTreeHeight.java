@@ -2,15 +2,24 @@ package com.ds.tree.basic;
 
 import com.ds.structure.Node;
 
+/**
+ * 
+ * @author Abhineet
+ *
+ *	Evaluate the height of a binary tree.
+ *	
+ */
 public class BinaryTreeHeight {
 	
+	// Using Recursion
 	public int getHeight(Node root) {
         
         if(root == null){ return -1;}
-            int leftHeight = getHeight (root.left);
-            int rightHeight = getHeight (root.right);
+           
+        int leftHeight = getHeight (root.left);
+        int rightHeight = getHeight (root.right);
      
-         if (leftHeight > rightHeight) {
+        if (leftHeight > rightHeight) {
             return leftHeight + 1;
         } else {
             return rightHeight + 1;
