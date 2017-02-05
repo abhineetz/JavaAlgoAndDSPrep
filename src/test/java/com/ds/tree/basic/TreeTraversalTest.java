@@ -1,9 +1,12 @@
 package com.ds.tree.basic;
+import static com.ds.tree.util.TreeTestUtils.buildTestData_HeightEq2;
+
 import org.junit.Assert;
 import org.junit.Test;
 
 import com.ds.structure.Node;
 import com.ds.tree.basic.TreeTraversal;
+import com.ds.tree.util.TreeTestUtils;
 
 /**
  * 
@@ -18,7 +21,7 @@ public class TreeTraversalTest {
 	@Test
 	public void preOrderTraversalTest(){
 		
-		Node root = buildTestData(); //	3 5 1 4 2 6
+		Node root = buildTestData_HeightEq2(); //	3 5 1 4 2 6
 		
 		String str = new TreeTraversal().preOrder(root);
 		
@@ -29,7 +32,7 @@ public class TreeTraversalTest {
 	@Test
 	public void postOrderTraversalTest(){
 		
-		Node root = buildTestData(); //	3 5 1 4 2 6
+		Node root = buildTestData_HeightEq2(); //	3 5 1 4 2 6
 		
 		String str = new TreeTraversal().postOrder(root);
 		System.out.println("PostOrder : "+str);
@@ -39,24 +42,13 @@ public class TreeTraversalTest {
 	@Test
 	public void inOrderTraversalTest(){
 		
-		Node root = buildTestData(); //	3 5 1 4 2 6
+		Node root = buildTestData_HeightEq2(); //	3 5 1 4 2 6
 		
 		String str = new TreeTraversal().inOrder(root);
 		System.out.println("InOrder : "+str);
 		Assert.assertEquals("1 5 4 3 6 2 ", str);
 	}
 
-	private Node buildTestData() {
-		Node root = new Node(3);
-		root.left = new Node(5);
-		root.right = new Node(2);
-		
-		root.left.left = new Node(1);
-		root.left.right = new Node(4);
-		
-		root.right.left = new Node(6);
-		return root;
-	}
 	
     
 }
