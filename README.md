@@ -1,5 +1,5 @@
 # JavaAlgoAndDSPrep
-Algorithms and datastructure preparation
+Algorithms and data-structure preparation.
 
 # Each class has a corresponding Test class eg. 
 	Class -> BinaryTreeHeight 
@@ -12,5 +12,7 @@ Algorithms and datastructure preparation
 - BinaryTreeSearchElement - Search and element in a binary tree.
 - BinaryTreeInsertElement - Insert an element in a binary tree.
 - BinaryTreeSize - Size of the Binary tree.
+- BinaryTreeLevelOrderReverseTraverse - Traverse in reverse level order (reverse BFS)
+- BinaryTreeDeepestNode - Get the deepest node in binary tree.
 
 
