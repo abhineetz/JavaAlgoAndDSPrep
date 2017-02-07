@@ -13,6 +13,6 @@ Algorithms and data-structure preparation.
 - BinaryTreeInsertElement - Insert an element in a binary tree.
 - BinaryTreeSize - Size of the Binary tree.
 - BinaryTreeLevelOrderReverseTraverse - Traverse in reverse level order (reverse BFS)
-- BinaryTreeDeepestNode - Get the deepest node in binary tree.
+- BinaryTreeDeepestNode - 1) Get the deepest node in binary tree. 2) Get the parent of the deepest node. 
 
 
