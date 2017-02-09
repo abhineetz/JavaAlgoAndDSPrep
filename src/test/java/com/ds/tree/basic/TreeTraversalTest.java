@@ -5,8 +5,6 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import com.ds.structure.Node;
-import com.ds.tree.basic.TreeTraversal;
-import com.ds.tree.util.TreeTestUtils;
 
 /**
  * 
@@ -26,7 +24,7 @@ public class TreeTraversalTest {
 		String str = new TreeTraversal().preOrder(root);
 		
 		System.out.println("PreOrder : "+ str);
-		Assert.assertEquals("3 5 1 4 2 6 ", str);
+		Assert.assertEquals("3 5 1 4 2 6", str);
 	}
 	
 	@Test
@@ -36,7 +34,7 @@ public class TreeTraversalTest {
 		
 		String str = new TreeTraversal().postOrder(root);
 		System.out.println("PostOrder : "+str);
-		Assert.assertEquals("1 4 5 6 2 3 ", str);
+		Assert.assertEquals("1 4 5 6 2 3", str);
 	}
 	
 	@Test
@@ -46,7 +44,7 @@ public class TreeTraversalTest {
 		
 		String str = new TreeTraversal().inOrder(root);
 		System.out.println("InOrder : "+str);
-		Assert.assertEquals("1 5 4 3 6 2 ", str);
+		Assert.assertEquals("1 5 4 3 6 2", str);
 	}
 
 	@Test
@@ -56,7 +54,7 @@ public class TreeTraversalTest {
 		
 		String str = new TreeTraversal().levelOrderTraversal(root);
 		System.out.println("LevelOrder : "+str);
-		Assert.assertEquals("3 5 2 1 4 6 ", str);
+		Assert.assertEquals("3 5 2 1 4 6", str);
 	}
     
 }

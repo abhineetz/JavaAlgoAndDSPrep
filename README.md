@@ -14,5 +14,6 @@ Algorithms and data-structure preparation.
 - BinaryTreeSize - Size of the Binary tree.
 - BinaryTreeLevelOrderReverseTraverse - Traverse in reverse level order (reverse BFS)
 - BinaryTreeDeepestNode - 1) Get the deepest node in binary tree. 2) Get the parent of the deepest node. 
+- BinaryTreeDeleteNode - Swap the node to be deleted with the deepest node. Make deepest node null.
 
 

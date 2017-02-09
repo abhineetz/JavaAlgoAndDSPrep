@@ -69,4 +69,44 @@ public class BinaryTreeSearchElementTest {
 		boolean foundMatch = new BinaryTreeSearchElement().searchElementRecursively(root, 12);
 		assertEquals(true, foundMatch);
 	}
+	
+	@Test
+	public void searchElementTest_PASS(){
+		
+		Node root = buildTestData_HeightEq3();
+		
+		Node matchedNode = new BinaryTreeSearchElement().searchElement(root, 12);
+		assertEquals(12, matchedNode.data);
+	}
+	
+	@Test
+	public void searchElementAndReturnParentTest_PASS() throws Exception{
+		
+		Node root = buildTestData_HeightEq3();
+		
+		Node matchedNode = new BinaryTreeSearchElement().searchElementAndReturnParent(root, 12);
+		assertEquals(6, matchedNode.data);
+		
+		matchedNode = new BinaryTreeSearchElement().searchElementAndReturnParent(root, 5);
+		assertEquals(3, matchedNode.data);
+		
+		
+	}
+	
+	@Test(expected=Exception.class)
+	public void searchElementAndReturnParentTest_Exception_PASS() throws Exception{
+		
+		Node root = buildTestData_HeightEq3();
+		
+		new BinaryTreeSearchElement().searchElementAndReturnParent(root, 3);
+	}
+
+	@Test
+	public void searchElementAndReturnParentTest2_PASS() throws Exception{
+		
+		Node root = buildTestData_HeightEq2();
+		
+		Node matchedNode = new BinaryTreeSearchElement().searchElementAndReturnParent(root, 12);
+		assertEquals(2, matchedNode.data);
+	}
 }

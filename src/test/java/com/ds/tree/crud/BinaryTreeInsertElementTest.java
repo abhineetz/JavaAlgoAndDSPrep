@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.ds.tree.basic;
+package com.ds.tree.crud;
 
 import static com.ds.tree.util.TreeTestUtils.buildTestData_HeightEq2;
 import static com.ds.tree.util.TreeTestUtils.buildTestData_HeightEq3;
@@ -10,6 +10,7 @@ import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
 import com.ds.structure.Node;
+import com.ds.tree.basic.TreeTraversal;
 
 /**
  * @author Abhineet

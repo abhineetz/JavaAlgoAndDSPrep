@@ -28,7 +28,7 @@ public class TreeTraversal {
 	    
 	    if (root.right != null) preOrder(root.right);
 	    
-	    return str.toString();
+	    return str.toString().trim();
 	}
 	
 	/*
@@ -43,7 +43,7 @@ public class TreeTraversal {
 	   
 	    if(root != null) str.append(root.data+" ");
 	     
-	    return str.toString();
+	    return str.toString().trim();
 	}
 	
 	/*
@@ -58,7 +58,7 @@ public class TreeTraversal {
 	    
 	    if (root.right !=null) inOrder(root.right);
 	    
-	    return str.toString();
+	    return str.toString().trim();
 	}
 	
 	/*
@@ -75,14 +75,14 @@ public class TreeTraversal {
 			Node head = queue.remove();
 			
 			str.append(head.data+" ");
-			System.out.print(head.data+" ");
+			//System.out.print(head.data+" ");
 			
 			if (head.left != null) queue.add(head.left);
 			if (head.right != null) queue.add(head.right);
 			
 		}
 		
-		return str.toString();
+		return str.toString().trim();
 	}
 }
 

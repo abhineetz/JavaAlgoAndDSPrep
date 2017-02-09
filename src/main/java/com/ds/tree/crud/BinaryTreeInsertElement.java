@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.ds.tree.basic;
+package com.ds.tree.crud;
 
 import java.util.LinkedList;
 import java.util.Queue;
