@@ -4,8 +4,8 @@
 package com.ds.tree.crud;
 
 import com.ds.structure.Node;
-import com.ds.tree.basic.BinaryTreeDeepestNode;
-import com.ds.tree.basic.BinaryTreeSearchElement;
+import com.ds.tree.basic.BTDeepestNode;
+import com.ds.tree.basic.BTSearchElement;
 
 /**
  * @author Abhineet
@@ -29,7 +29,7 @@ public class BTDeleteElement {
 		}
 		
 		// Find the deepest node in the tree
-		BinaryTreeDeepestNode btDeepestNode = new BinaryTreeDeepestNode();
+		BTDeepestNode btDeepestNode = new BTDeepestNode();
 		Node deepestNodesParent = btDeepestNode.getDeepestNodesParent(root);
 		
 		int deepestNodeData;
@@ -40,7 +40,7 @@ public class BTDeleteElement {
 		}
 		
 		// Search the node for the data
-		BinaryTreeSearchElement bst = new BinaryTreeSearchElement();
+		BTSearchElement bst = new BTSearchElement();
 		Node searchElemParentNode = bst.searchElementAndReturnParent(root, data);
 		
 		// Set the vale of deepestNodes to the node to be deleted
