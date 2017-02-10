@@ -9,7 +9,7 @@ import com.ds.structure.Node;
  *	Evaluate the height of a binary tree.
  *	
  */
-public class BinaryTreeHeight {
+public class BTHeight {
 	
 	// Using Recursion
 	public int getHeight(Node root) {

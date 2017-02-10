@@ -10,26 +10,26 @@ import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
 import com.ds.structure.Node;
-import com.ds.tree.basic.TreeTraversal;
+import com.ds.tree.basic.BTTraversal;
 
 /**
  * @author Abhineet
  *
  */
-public class BinaryTreeInsertElementTest {
+public class BTInsertElementTest {
 
 	@Test
 	public void insertTest() throws Exception{
 		
 		Node root = buildTestData_HeightEq2();
 		
-		new TreeTraversal().levelOrderTraversal(root);
+		new BTTraversal().levelOrderTraversal(root);
 		
 		System.out.println();
 		
-		new BinaryTreeInsertElement().insert(root, 21);
+		new BTInsertElement().insert(root, 21);
 		
-		String output = new TreeTraversal().levelOrderTraversal(root);
+		String output = new BTTraversal().levelOrderTraversal(root);
 		
 		assertEquals("3 5 2 1 4 6 21", output.trim());
 	}
@@ -39,13 +39,13 @@ public class BinaryTreeInsertElementTest {
 		
 		Node root = buildTestData_HeightEq3();
 		
-		new TreeTraversal().levelOrderTraversal(root);
+		new BTTraversal().levelOrderTraversal(root);
 		
 		System.out.println();
 		
-		new BinaryTreeInsertElement().insert(root, 65);
+		new BTInsertElement().insert(root, 65);
 		
-		String output = new TreeTraversal().levelOrderTraversal(root);
+		String output = new BTTraversal().levelOrderTraversal(root);
 		
 		assertEquals("3 5 2 1 4 6 65 12", output.trim());
 		

@@ -12,7 +12,7 @@ import com.ds.structure.Node;
  *	Evaluate the height of a binary tree.
  *	
  */
-public class BinaryTreeSize {
+public class BTSize {
 	
 	int size = 0;
 	

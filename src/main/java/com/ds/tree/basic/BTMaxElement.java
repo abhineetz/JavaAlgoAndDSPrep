@@ -13,7 +13,7 @@ import com.ds.structure.Node;
  *
  *	Find the max element in binary tree
  */
-public class BinaryTreeMaxElement {
+public class BTMaxElement {
 
 	int maxElement = MIN_VALUE;
 	

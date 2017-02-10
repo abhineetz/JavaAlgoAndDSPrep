@@ -11,9 +11,9 @@ import com.ds.structure.Node;
  *
  *	Reverse Level Order Traversal
  *	
- * {@link BinaryTreeLevelOrderReverseTraverseTest}
+ * {@link BTLevelOrderReverseTraverseTest}
  */
-public class BinaryTreeLevelOrderReverseTraverse {
+public class BTLevelOrderReverseTraverse {
 	
 	StringBuilder str = new StringBuilder();
 	

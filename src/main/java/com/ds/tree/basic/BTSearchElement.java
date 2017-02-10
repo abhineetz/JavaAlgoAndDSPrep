@@ -11,7 +11,7 @@ import com.ds.structure.Node;
  *
  *	Search an element in a binary tree
  */
-public class BinaryTreeSearchElement {
+public class BTSearchElement {
 
 	private boolean isElementMatched = false;
 	private Node matchedNode = null; 

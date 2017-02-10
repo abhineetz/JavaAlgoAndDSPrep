@@ -8,14 +8,14 @@ import org.junit.Test;
 
 import com.ds.structure.Node;
 
-public class BinaryTreeSizeTest {
+public class BTSizeTest {
 	
 	@Test
 	public void getSizeTest_HeightEq2(){
 		
 		Node root = buildTestData_HeightEq2(); //	3 5 1 4 2 6
 		
-		int size = new BinaryTreeSize().getSize(root);
+		int size = new BTSize().getSize(root);
 		
 		System.out.println("Size : "+ size);
 		assertEquals(6, size);
@@ -27,7 +27,7 @@ public class BinaryTreeSizeTest {
 		
 		Node root = buildTestData_HeightEq3(); 
 		
-		int size = new BinaryTreeSize().getSize(root);
+		int size = new BTSize().getSize(root);
 		
 		System.out.println("Size : "+ size);
 		assertEquals(7, size);
@@ -42,7 +42,7 @@ public class BinaryTreeSizeTest {
 		
 		Node root = buildTestData_HeightEq2(); //	3 5 1 4 2 6
 		
-		int size = new BinaryTreeSize().getSizeWoRecursion(root);
+		int size = new BTSize().getSizeWoRecursion(root);
 		
 		System.out.println("Size : "+ size);
 		assertEquals(6, size);
@@ -53,7 +53,7 @@ public class BinaryTreeSizeTest {
 		
 		Node root = buildTestData_HeightEq3(); 
 		
-		int size = new BinaryTreeSize().getSizeWoRecursion(root);
+		int size = new BTSize().getSizeWoRecursion(root);
 		
 		System.out.println("Size : "+ size);
 		assertEquals(7, size);

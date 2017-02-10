@@ -8,14 +8,14 @@ import org.junit.Test;
 
 import com.ds.structure.Node;
 
-public class BinaryTreeHeightTest {
+public class BTHeightTest {
 	
 	@Test
 	public void getHeightTest_HeightEq2(){
 		
 		Node root = buildTestData_HeightEq2(); //	3 5 1 4 2 6
 		
-		int height = new BinaryTreeHeight().getHeight(root);
+		int height = new BTHeight().getHeight(root);
 		
 		System.out.println("Height : "+ height);
 		Assert.assertEquals(2, height);
@@ -27,7 +27,7 @@ public class BinaryTreeHeightTest {
 		
 		Node root = buildTestData_HeightEq3(); //	3 5 1 4 2 6
 		
-		int height = new BinaryTreeHeight().getHeight(root);
+		int height = new BTHeight().getHeight(root);
 		
 		System.out.println("Height : "+ height);
 		Assert.assertEquals(3, height);

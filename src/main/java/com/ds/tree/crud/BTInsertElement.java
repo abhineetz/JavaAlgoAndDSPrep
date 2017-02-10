@@ -12,7 +12,7 @@ import com.ds.structure.Node;
  * @author Abhineet
  *
  */
-public class BinaryTreeInsertElement {
+public class BTInsertElement {
 
 	/*
 	 * Insert an element in a binary tree at any vacancy at the first vacant level.

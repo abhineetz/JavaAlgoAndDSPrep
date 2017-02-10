@@ -8,14 +8,14 @@ import org.junit.Test;
 
 import com.ds.structure.Node;
 
-public class BinaryTreeDeepestNodeTest {
+public class BTDeepestNodeTest {
 	
 	@Test
 	public void getDeepestNodeTest_HeightEq2() throws Exception{
 		
 		Node root = buildTestData_HeightEq2(); //	3 5 1 4 2 6
 		
-		Node deepestNode = new BinaryTreeDeepestNode().getDeepestNode(root);
+		Node deepestNode = new BTDeepestNode().getDeepestNode(root);
 		
 		System.out.println("deepestNode : "+ deepestNode.data);
 		Assert.assertEquals(6, deepestNode.data);
@@ -26,7 +26,7 @@ public class BinaryTreeDeepestNodeTest {
 		
 		Node root = buildTestData_HeightEq3(); 
 		
-		Node deepestNode = new BinaryTreeDeepestNode().getDeepestNode(root);
+		Node deepestNode = new BTDeepestNode().getDeepestNode(root);
 		
 		System.out.println("deepestNode : "+ deepestNode.data);
 		Assert.assertEquals(12, deepestNode.data);
@@ -37,7 +37,7 @@ public class BinaryTreeDeepestNodeTest {
 		
 		Node root = buildTestData_HeightEq2(); //	3 5 1 4 2 6
 		
-		Node deepestNodesParent = new BinaryTreeDeepestNode().getDeepestNodesParent(root);
+		Node deepestNodesParent = new BTDeepestNode().getDeepestNodesParent(root);
 		
 		System.out.println("deepestNodesParent : "+ deepestNodesParent.data);
 		Assert.assertEquals(2, deepestNodesParent.data);
@@ -48,7 +48,7 @@ public class BinaryTreeDeepestNodeTest {
 		
 		Node root = buildTestData_HeightEq3(); 
 		
-		Node deepestNodesParent = new BinaryTreeDeepestNode().getDeepestNodesParent(root);
+		Node deepestNodesParent = new BTDeepestNode().getDeepestNodesParent(root);
 		
 		System.out.println("deepestNodesParent : "+ deepestNodesParent.data);
 		Assert.assertEquals(6, deepestNodesParent.data);

@@ -8,7 +8,7 @@ import org.junit.Test;
 
 import com.ds.structure.Node;
 
-public class BinaryTreeSearchElementTest {
+public class BTSearchElementTest {
 
 	/*
 	 *  Binary Tree search element with recursion tests
@@ -18,7 +18,7 @@ public class BinaryTreeSearchElementTest {
 		
 		Node root = buildTestData_HeightEq2();
 		
-		boolean foundMatch = new BinaryTreeSearchElement().searchElementRecursively(root, 6);
+		boolean foundMatch = new BTSearchElement().searchElementRecursively(root, 6);
 		assertEquals(true, foundMatch);
 	}
 	
@@ -27,7 +27,7 @@ public class BinaryTreeSearchElementTest {
 		
 		Node root = buildTestData_HeightEq2();
 		
-		boolean foundMatch = new BinaryTreeSearchElement().searchElementRecursively(root, 12);
+		boolean foundMatch = new BTSearchElement().searchElementRecursively(root, 12);
 		assertEquals(false, foundMatch);
 	}
 	
@@ -36,7 +36,7 @@ public class BinaryTreeSearchElementTest {
 		
 		Node root = buildTestData_HeightEq3();
 		
-		boolean foundMatch = new BinaryTreeSearchElement().searchElementRecursively(root, 12);
+		boolean foundMatch = new BTSearchElement().searchElementRecursively(root, 12);
 		assertEquals(true, foundMatch);
 	}
 	
@@ -48,7 +48,7 @@ public class BinaryTreeSearchElementTest {
 		
 		Node root = buildTestData_HeightEq2();
 		
-		boolean foundMatch = new BinaryTreeSearchElement().searchElementRecursively(root, 6);
+		boolean foundMatch = new BTSearchElement().searchElementRecursively(root, 6);
 		assertEquals(true, foundMatch);
 	}
 	
@@ -57,7 +57,7 @@ public class BinaryTreeSearchElementTest {
 		
 		Node root = buildTestData_HeightEq2();
 		
-		boolean foundMatch = new BinaryTreeSearchElement().searchElementRecursively(root, 18);
+		boolean foundMatch = new BTSearchElement().searchElementRecursively(root, 18);
 		assertEquals(false, foundMatch);
 	}
 	
@@ -66,7 +66,7 @@ public class BinaryTreeSearchElementTest {
 		
 		Node root = buildTestData_HeightEq3();
 		
-		boolean foundMatch = new BinaryTreeSearchElement().searchElementRecursively(root, 12);
+		boolean foundMatch = new BTSearchElement().searchElementRecursively(root, 12);
 		assertEquals(true, foundMatch);
 	}
 	
@@ -75,7 +75,7 @@ public class BinaryTreeSearchElementTest {
 		
 		Node root = buildTestData_HeightEq3();
 		
-		Node matchedNode = new BinaryTreeSearchElement().searchElement(root, 12);
+		Node matchedNode = new BTSearchElement().searchElement(root, 12);
 		assertEquals(12, matchedNode.data);
 	}
 	
@@ -84,10 +84,10 @@ public class BinaryTreeSearchElementTest {
 		
 		Node root = buildTestData_HeightEq3();
 		
-		Node matchedNode = new BinaryTreeSearchElement().searchElementAndReturnParent(root, 12);
+		Node matchedNode = new BTSearchElement().searchElementAndReturnParent(root, 12);
 		assertEquals(6, matchedNode.data);
 		
-		matchedNode = new BinaryTreeSearchElement().searchElementAndReturnParent(root, 5);
+		matchedNode = new BTSearchElement().searchElementAndReturnParent(root, 5);
 		assertEquals(3, matchedNode.data);
 		
 		
@@ -98,7 +98,7 @@ public class BinaryTreeSearchElementTest {
 		
 		Node root = buildTestData_HeightEq3();
 		
-		new BinaryTreeSearchElement().searchElementAndReturnParent(root, 3);
+		new BTSearchElement().searchElementAndReturnParent(root, 3);
 	}
 
 	@Test
@@ -106,7 +106,7 @@ public class BinaryTreeSearchElementTest {
 		
 		Node root = buildTestData_HeightEq2();
 		
-		Node matchedNode = new BinaryTreeSearchElement().searchElementAndReturnParent(root, 12);
+		Node matchedNode = new BTSearchElement().searchElementAndReturnParent(root, 12);
 		assertEquals(2, matchedNode.data);
 	}
 }

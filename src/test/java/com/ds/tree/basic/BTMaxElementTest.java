@@ -8,7 +8,7 @@ import org.junit.Test;
 
 import com.ds.structure.Node;
 
-public class BinaryTreeMaxElementTest {
+public class BTMaxElementTest {
 	
 	/*
 	 *  Test cases using recursion implementation
@@ -18,7 +18,7 @@ public class BinaryTreeMaxElementTest {
 		
 		Node root = buildTestData_HeightEq3();
 		
-		int max = new BinaryTreeMaxElement().getMaxElement(root); 
+		int max = new BTMaxElement().getMaxElement(root); 
 		
 		assertEquals(12, max);
 	}
@@ -28,7 +28,7 @@ public class BinaryTreeMaxElementTest {
 		
 		Node root = buildTestData_HeightEq3_MaxValEqRoot();
 		
-		int max = new BinaryTreeMaxElement().getMaxElement(root); 
+		int max = new BTMaxElement().getMaxElement(root); 
 		
 		assertEquals(9, max);
 	}
@@ -42,7 +42,7 @@ public class BinaryTreeMaxElementTest {
 		
 		Node root = buildTestData_HeightEq3_MaxValEqRoot();
 		
-		int max = new BinaryTreeMaxElement().getMaxElementWoRecursion(root); 
+		int max = new BTMaxElement().getMaxElementWoRecursion(root); 
 		
 		assertEquals(9, max);
 	}
@@ -52,7 +52,7 @@ public class BinaryTreeMaxElementTest {
 		
 		Node root = buildTestData_HeightEq3_MaxValEqRoot();
 		
-		int max = new BinaryTreeMaxElement().getMaxElementWoRecursion(root); 
+		int max = new BTMaxElement().getMaxElementWoRecursion(root); 
 		
 		assertEquals(9, max);
 	}

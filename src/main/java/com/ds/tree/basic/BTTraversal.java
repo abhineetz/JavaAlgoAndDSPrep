@@ -12,7 +12,7 @@ import com.ds.structure.Node;
  * Tree Traversal preorder, inorder and postorder techniques
  *
  */
-public class TreeTraversal {
+public class BTTraversal {
 
 	StringBuilder str = new StringBuilder();
 	

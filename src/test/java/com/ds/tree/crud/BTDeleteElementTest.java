@@ -9,26 +9,26 @@ import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
 import com.ds.structure.Node;
-import com.ds.tree.basic.TreeTraversal;
+import com.ds.tree.basic.BTTraversal;
 
 /**
  * @author Abhineet
  *
  */
-public class BinaryTreeDeleteElementTest {
+public class BTDeleteElementTest {
 
 	@Test
 	public void deleteTest() throws Exception{
 		
 		Node root = buildTestData_HeightEq2();
 		
-		System.out.println("Before Delete : "+new TreeTraversal().levelOrderTraversal(root));
+		System.out.println("Before Delete : "+new BTTraversal().levelOrderTraversal(root));
 		
 		System.out.println();
 		
-		new BinaryTreeDeleteElement().delete(root, 5);
+		new BTDeleteElement().delete(root, 5);
 		
-		String output = new TreeTraversal().levelOrderTraversal(root);
+		String output = new BTTraversal().levelOrderTraversal(root);
 		System.out.println("After Delete : "+output);
 		
 		assertEquals("3 6 2 1 4", output.trim());
@@ -43,13 +43,13 @@ public class BinaryTreeDeleteElementTest {
 		
 		Node root = buildTestData_HeightEq2();
 		
-		System.out.println("Before Delete : "+new TreeTraversal().levelOrderTraversal(root));
+		System.out.println("Before Delete : "+new BTTraversal().levelOrderTraversal(root));
 		
 		System.out.println();
 		
-		new BinaryTreeDeleteElement().delete(root, 3);
+		new BTDeleteElement().delete(root, 3);
 		
-		String output = new TreeTraversal().levelOrderTraversal(root);
+		String output = new BTTraversal().levelOrderTraversal(root);
 		System.out.println("After Delete : "+output);
 		
 		assertEquals("6 5 2 1 4", output.trim());

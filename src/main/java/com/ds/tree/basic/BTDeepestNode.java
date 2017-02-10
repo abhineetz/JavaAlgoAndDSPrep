@@ -8,9 +8,9 @@ import com.ds.structure.Node;
  *
  *	Find the deepest node of a binary tree.
  *	
- * {@link BinaryTreeDeepestNodeTest}
+ * {@link BTDeepestNodeTest}
  */
-public class BinaryTreeDeepestNode {
+public class BTDeepestNode {
 	
 	Node deepestNode = null;
 	Node parentNode = null;

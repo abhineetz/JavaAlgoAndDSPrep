@@ -11,7 +11,7 @@ import com.ds.tree.basic.BinaryTreeSearchElement;
  * @author Abhineet
  *
  */
-public class BinaryTreeDeleteElement {
+public class BTDeleteElement {
 
 	/*
 	 * Delete an element from the binary tree.
