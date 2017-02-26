@@ -16,4 +16,9 @@ Algorithms and data-structure preparation.
 - BinaryTreeDeepestNode - 1) Get the deepest node in binary tree. 2) Get the parent of the deepest node. 
 - BinaryTreeDeleteNode - Swap the node to be deleted with the deepest node. Make deepest node null.
 
+## Two Pointer Algorithms
+https://leetcode.com/articles/two-pointer-technique/
+https://tp-iiita.quora.com/The-Two-Pointer-Algorithm
+- MergeSortedArrays - Merge Two sorted arrays.
+- CheckSortedArrayContainsPairWithGivenSum - Given a sorted array and a number N, find pair of indices (i,j) in array such that their sum = N.
 

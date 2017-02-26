@@ -1,4 +1,10 @@
 package com.algo.twopointer.technique;
+ 
+/**
+ * Given 2 sorted arrays, merge the elements into a new sorted array.
+ * 
+ * @author Abhineet
+ */
 
 public class MergeSortedArrays {
   
